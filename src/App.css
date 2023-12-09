@@ -1,0 +1,54 @@
+.div__black {
+
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.div__white {
+    background-color: white;
+}
+
+.header {
+    background-color: black;
+    position: fixed;
+    top: 1rem;
+    width: auto;
+    min-width: 90vw;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid white;
+    border-radius: 1rem;
+
+}
+
+
+.div__h1-black {
+    width: 50rem;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div__ul {
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ul__li {
+    width: 20px;
+}
+
+.a__img-h {
+    width: 50px;
+}
