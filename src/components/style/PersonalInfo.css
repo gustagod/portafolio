@@ -21,7 +21,7 @@
 }
 
 .section1__p {
-    margin-top: 2rem;
+    margin: 2rem;
     color: white;
     font-size: 3rem;
     text-align: center;
@@ -79,6 +79,24 @@
     color: white;
 }
 
+
+.section4__ul{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section4__li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.section4li_img{
+    width: 100px;
+}
 
 .section5{
     width: 100vw;

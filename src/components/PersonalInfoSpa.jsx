@@ -33,8 +33,8 @@ const PersonalInfoSpa = () => {
       <section className='per__section4'>
         <h3 className='section4__h3'>Estudios</h3>
         <ul className='section4__ul'>
-          <li>Pogramacion web full stack, Academlo </li>
-          <li>Ingenieria Mecatronica, Instituto tecnologico de Sonora</li>
+          <li className='section4__li'>Pogramacion web full stack, Academlo <span>(2023-2024)</span><img className='section4li_img' src=".\academlo.png" alt="" /> </li>
+          <li className='section4__li'>Ingenieria Mecatronica, Instituto tecnologico de Sonora <span>(2011-2015) </span> <img className='section4li_img' src=".\itson.png" alt="" /></li>
         </ul>
       </section>
 <hr />
