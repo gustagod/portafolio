@@ -17,12 +17,12 @@ function App() {
 
   return (
     <div className={`div__black ${theme === 'white' && 'div__white'}`}>
- 
+
       <header className='header'>
         <h1 className='div__h1-black'>Gustavo Alain Portillo Hernandez</h1>
         <button className='div__btn-l' onClick={handelLenguage}>Lenguaje</button>
         <button className='div__btn-t' onClick={handelTheme}>Tema</button>
-        <button className='div__cv'><a className='div__a1' href='../cv_esp.pdf' download="cv">CV</a></button>
+        <a className='div__a1' href="../cv_esp.pdf" download='cv'><button className='div__btn-cv'><i class='bx bx-download'></i></button></a>
         <ul className='div__ul'>
           <li className='ul__li-header'><a href="https://www.linkedin.com/in/gustavo-alain-portillo-hern%C3%A1ndez-b873b35a/" target='_blank'><img className='a__img-h' src="../../linkedin.svg" alt="" /></a></li>
           <li className='ul__li-header'><a href="https://github.com/gustagod" target='_blank'><img className='a__img-h' src="../../github.svg" alt="" /></a></li>

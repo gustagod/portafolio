@@ -67,13 +67,22 @@
     
 }
 
-.div__cv{
+.div__btn-cv{
     margin: 0.5rem;
     width: 100px;
     border-radius: 2rem;
 }
 
 .div__a1{
+    margin: 0.5rem;
+    width: 100px;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div__btn-cv{
     width: 100%;
     height: 100%;
 }
