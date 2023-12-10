@@ -1,11 +1,129 @@
-.div__per{
+.div__per {
     padding-top: 10rem;
 }
 
-.per__h1{
+.per__section1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1__h1 {
+    color: white;
+    font-size: 5rem;
+}
+
+.section1h1__span {
+    color: rgb(255, 49, 49);
+}
+
+.section1__p {
+    margin-top: 2rem;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.per__section2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section2__h3 {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.section2__ul {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.section2__li {
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.section2li__span {
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+
+.per__section3 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section3__h3 {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.section3__ul {
+    margin-top: 2rem;
+}
+
+.section3__li {
     color: white;
 }
 
-.per__p{
+
+.section5{
+    width: 100vw;
+}
+
+.section5__article{
+    width: 100vw;
+}
+
+.section5__h3 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.section5article__ul {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.section5__form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section5article__li {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.section5article__ul2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
