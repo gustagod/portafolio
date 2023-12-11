@@ -1,13 +1,11 @@
 .app__div{
     width: 80vw;
-    margin: 4rem;
     background-color: rgba(226, 66, 66, 0.349);
     border-radius: 2rem;
-    display: flex;
-    justify-content: center;
 }
 
 .app__header{
+    top:0;
     width: 80vw;
     height: 5vw;
     display: flex;
@@ -51,4 +49,7 @@
 
 .apphul__li{
     width: 3vw;
+}
+.app__info{
+    width: 80vw;
 }
