@@ -4,7 +4,6 @@ import PersonalInfoSpa from './components/PersonalInfoSpa'
 import PersonalInfoEng from './components/PesonalInfoEng'
 
 function App() {
-  const [theme, setTheme] = useState('black')
   const [lenguage, setLenguage] = useState('spanish')
 
   const handelLenguage = () => {
@@ -16,20 +15,19 @@ function App() {
   }
 
   return (
-    <div className={`div__black ${theme === 'white' && 'div__white'}`}>
+    <div className='app__div'>
 
-      <header className='header'>
-        <h1 className='div__h1-black'>Gustavo Alain Portillo Hernandez</h1>
-        <button className='div__btn-l' onClick={handelLenguage}>Lenguaje</button>
-        <button className='div__btn-t' onClick={handelTheme}>Tema</button>
-        <a className='div__a1' href="../cv_esp.pdf" download='cv'><button className='div__btn-cv'><i class='bx bx-download'></i></button></a>
-        <ul className='div__ul'>
-          <li className='ul__li-header'><a href="https://www.linkedin.com/in/gustavo-alain-portillo-hern%C3%A1ndez-b873b35a/" target='_blank'><img className='a__img-h' src="../../linkedin.svg" alt="" /></a></li>
-          <li className='ul__li-header'><a href="https://github.com/gustagod" target='_blank'><img className='a__img-h' src="../../github.svg" alt="" /></a></li>
-          <li className='ul__li-header'><a href="https://wa.me/526442110065" target="_blank"><img className='a__img-h' src="../../whatsapp.svg" alt="" /></a></li>
+      <header className='app__header'>
+        <h1 className='appheader__h1'>Gustavo Portillo</h1>
+        <button className='app__btn-l' onClick={handelLenguage}>L</button>
+        <a className='appheader__a1' href="../cv_esp.pdf" download='cv'><button className='app__btn-cv'><i class='bx bx-download'></i></button></a>
+        <ul className='appheader__ul'>
+          <li className='apphul__li'><a href="https://www.linkedin.com/in/gustavo-alain-portillo-hern%C3%A1ndez-b873b35a/" target='_blank'><img className='a__img-h' src="../../linkedin.svg" alt="" /></a></li>
+          <li className='apphul__li'><a href="https://github.com/gustagod" target='_blank'><img className='a__img-h' src="../../github.svg" alt="" /></a></li>
+          <li className='apphul__li'><a href="https://wa.me/526442110065" target="_blank"><img className='a__img-h' src="../../whatsapp.svg" alt="" /></a></li>
         </ul>
       </header>
-      <div className='div__info'>
+      <div className='app__info'>
         {
           lenguage === 'spanish' ? <PersonalInfoSpa /> : <PersonalInfoEng />
         }

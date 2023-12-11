@@ -12,7 +12,8 @@
 
 .section1__h1 {
     color: white;
-    font-size: 5rem;
+    font-size: 15vw;
+    text-align: center;
 }
 
 .section1h1__span {
@@ -60,8 +61,7 @@
 
 
 .per__section3 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin:2rem;
 }
 
 .section3__h3 {
@@ -71,7 +71,7 @@
 }
 
 .section3__ul {
-    margin-top: 2rem;
+    margin: 2rem;
 }
 
 .section3__li {
@@ -89,7 +89,6 @@
 }
 
 .section4__ul {
-    width: 100vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -114,13 +113,7 @@
     border-radius: 1rem;
 }
 
-.section5 {
-    width: 100vw;
-}
 
-.section5__article {
-    width: 100vw;
-}
 
 .section5__h3 {
     margin-top: 2rem;
@@ -131,7 +124,6 @@
 }
 
 .section5article__ul {
-    width: 100vw;
     display: flex;
     flex-direction: row;
 }

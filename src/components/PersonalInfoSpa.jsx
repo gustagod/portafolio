@@ -11,7 +11,7 @@ const PersonalInfoSpa = () => {
       </section>
       <hr />
       <section className='per__section2'>
-        <h3 className='section2__h3'>Experiencia en los lenguajes como</h3>
+        <h3 className='section2__h3'>Experiencia en lenguajes como</h3>
         <ul className='section2__ul'>
           <li className='section2__li'><img className='section2li__img' src="../../html.svg" alt="" /><span className='section2li__span'>HTML</span></li>
           <li className='section2__li'><img className='section2li__img' src="../../js.svg" alt="" /><span className='section2li__span'>JavaScript</span></li>
