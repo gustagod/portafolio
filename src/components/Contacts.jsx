@@ -1,7 +1,7 @@
 import React from 'react'
 import './style/Contacts.css'
 
-const Contacts = () => {
+const Contacts = ({lan}) => {
 
   const handellinkeid = () => {
     window.open('https://www.linkedin.com/in/gustavo-alain-portillo-hernández-b873b35a', '_blank');
@@ -30,11 +30,23 @@ const Contacts = () => {
       </ul>
         </li>
         <li className='contacts_ul1li'>
-          <ul className='contacts_ul1ul3'>
-            <li>Gustavo Portillo</li>
-            <li>Telefono: (+52)6442-11-00-65</li>
-            <li>Email: gustavo.alain@gmail.com</li>
-          </ul>
+          {
+            lan === 'spanish' ?(
+              <ul className='contacts_ul1ul3'>
+              <li>Gustavo Portillo</li>
+              <li>Telefono: (+52)6442-11-00-65</li>
+              <li>Email: gustavo.alain@gmail.com</li>
+            </ul>
+            ):
+            (
+              <ul className='contacts_ul1ul3'>
+              <li>Gustavo Portillo</li>
+              <li>Phone: (+52)6442-11-00-65</li>
+              <li>Email: gustavo.alain@gmail.com</li>
+            </ul>
+            )
+          }
+
         </li>
       </ul>
 
