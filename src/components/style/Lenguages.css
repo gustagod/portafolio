@@ -1,0 +1,29 @@
+
+
+
+.lengueage__ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.lenguage__li{
+width: 150px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+
+}
+
+.lenguage__img{
+    width: 100%;
+}
+
+.lenguage__span{
+    text-align: center;
+    font-size: 1.5rem;
+}
