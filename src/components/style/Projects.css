@@ -1,0 +1,35 @@
+.projects__div {
+    width: 100%;
+}
+
+.projects__ul {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects__li {
+    width: 300px;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.projects__img {
+
+    border-radius: 1rem;
+
+}
+
+.projects__span {
+    text-align: center;
+    font-size: 1rem;
+}
