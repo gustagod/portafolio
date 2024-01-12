@@ -1,40 +1,65 @@
 import { useState } from 'react'
 import './App.css'
-import PersonalInfoSpa from './components/PersonalInfoSpa'
-import PersonalInfoEng from './components/PesonalInfoEng'
+import Personal from './components/Personal'
+import Projects from './components/Projects'
+import Education from './components/Education'
+import Lenguages from './components/Lenguages'
+import Contacts from './components/Contacts'
 
 function App() {
   const [lenguage, setLenguage] = useState('spanish')
+  const [page, setpage] = useState(<Personal/>)
 
   const handelLenguage = () => {
     lenguage === 'spanish' ? setLenguage('english') : setLenguage('spanish')
   }
 
-  const handelTheme = () => {
-    theme === 'black' ? setTheme('white') : setTheme('black')
+  const handelMain=()=>{
+    setpage(<Personal/>)
   }
+  const handelProjects=()=>{
+    setpage(<Projects/>)
+  }
+
+  const handelLenguages=()=>{
+    setpage(<Lenguages/>)
+  }
+
+  const handelEducation=()=>{
+    setpage(<Education/>)
+  }
+
+  const handelContacts=()=>{
+    setpage(<Contacts/>)
+  }
+
+
+
 
   return (
     <div className='app__div'>
 
       <header className='app__header'>
-        <h1 className='appheader__h1'>Gustavo Portillo</h1>
-        <button className='app__btn-l' onClick={handelLenguage}>L</button>
-        <a className='appheader__a1' href="../cv_esp.pdf" download='cv'><button className='app__btn-cv'><i class='bx bx-download'></i></button></a>
-        <ul className='appheader__ul'>
-          <li className='apphul__li'><a href="https://www.linkedin.com/in/gustavo-alain-portillo-hern%C3%A1ndez-b873b35a/" target='_blank'><img className='a__img-h' src="../../linkedin.svg" alt="" /></a></li>
-          <li className='apphul__li'><a href="https://github.com/gustagod" target='_blank'><img className='a__img-h' src="../../github.svg" alt="" /></a></li>
-          <li className='apphul__li'><a href="https://wa.me/526442110065" target="_blank"><img className='a__img-h' src="../../whatsapp.svg" alt="" /></a></li>
+        <ul className='app__ul1'>
+          <li className='app__ul1li'><hr className='app__hr1' /></li>
+          <li className='app__ul1li'>
+            <ul className='app__ul2'>
+              <li><button className='app__btn' onClick={handelMain}><span className='app__ul2lispan'>Inicio</span></button></li>
+              <li><button className='app__btn' onClick={handelProjects}><span className='app__ul2lispan'>Proyectos</span></button></li>
+              <li><button className='app__btn' onClick={handelLenguages}><span className='app__ul2lispan'>Lenguajes</span></button></li>
+              <li><button className='app__btn' onClick={handelEducation}><span className='app__ul2lispan'>Educación</span></button></li>
+              <li><button className='app__btn' onClick={handelContacts}><span className='app__ul2lispan'>Contactame</span></button></li>
+            </ul>
+          </li>
+
         </ul>
       </header>
       <div className='app__info'>
         {
-          lenguage === 'spanish' ? <PersonalInfoSpa /> : <PersonalInfoEng />
+          page
         }
-
       </div>
-
-
+      <hr className='app__hr2' />
     </div>
 
 

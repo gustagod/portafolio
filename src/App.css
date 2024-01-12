@@ -1,55 +1,71 @@
-.app__div{
-    width: 80vw;
-    background-color: rgba(226, 66, 66, 0.349);
-    border-radius: 2rem;
-}
-
-.app__header{
-    top:0;
-    width: 80vw;
-    height: 5vw;
+.app__div {
+    width: 100vw;
+    height: 100vh;
+    padding: 2vh 2vw 2vh 2vw;
+    background-color: rgb(46, 44, 44);
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    border: 0.2vw solid white;
-    border-radius: 2rem;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.438);
-    backdrop-filter: blur(10px);
 }
 
-.appheader__h1{
-    color: rgb(255, 255, 255);
-    font-size: 3vw;
-}
-
-.app__btn-l{
-    border-radius: 2rem;
-    width: 4vw;
-    height: 2vw;
-    border: none;
-    font-size: 0.8vw;
-}
-
-.app__btn-cv{
-    border: none;
-    border-radius: 1rem;
-    width: 4vw;
-    height: 2vw;
-    min-height: 1.5vh;
-    font-size: 2vw;
-}
-
-.appheader__ul{
-    width: 20vw;
+.app__header {
+    width: 100%;
+    height: 10vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.apphul__li{
-    width: 3vw;
+.app__info {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.app__info{
-    width: 80vw;
+
+.app__ul1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.app__ul1li{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+.app__ul2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    align-items: center;
+    gap:1rem;
+}
+
+.app__btn{
+    background: none;
+    border: none;
+    color: inherit;
+}
+
+.app__btn:hover{
+   transform: scale(1.2);
+}
+
+.app__hr1{
+    width: 100%;
+}
+
+.app__hr2{
+    width: 100%;
+}
+
+.app__ul2lispan{
+    font-size: 2rem;
 }
